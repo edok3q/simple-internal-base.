@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="impl">
+      <UniqueIdentifier>{66bd09ff-e96a-4bd7-af02-b6c21ba37359}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{a9a194bf-33a8-41f8-b939-58c554532683}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math\matrix">
+      <UniqueIdentifier>{a5db20d2-3388-492a-8050-1f7aff1e3c42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math\vector">
+      <UniqueIdentifier>{36de2a19-22b9-4540-8216-9a1fd8561a12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="impl\hooks">
+      <UniqueIdentifier>{23f7195e-d746-4a45-b220-5350b34b4b4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="impl\hooks\fn">
+      <UniqueIdentifier>{8e9ca7c6-040b-4345-94a4-90c16e782a23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rust">
+      <UniqueIdentifier>{365324a7-3acf-4d71-8d8a-c218acfb0505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rust\classes">
+      <UniqueIdentifier>{b7aba80a-6f6b-430c-8785-33b795a2c180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sapphire">
+      <UniqueIdentifier>{b2726ce4-3f93-4820-8b4c-0680d05ac78d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared">
+      <UniqueIdentifier>{d2011521-2c28-498d-b04b-4edcd849569d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\unity">
+      <UniqueIdentifier>{9ba17634-e288-497a-8177-df2bdaf662a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\utl">
+      <UniqueIdentifier>{72fc124f-dba6-482c-9a88-e44ffeb0b2a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rust\enums">
+      <UniqueIdentifier>{c88be775-59ea-4815-bd4b-9cbf5bcc5504}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\unity\rendering">
+      <UniqueIdentifier>{a46795c2-65f3-4fc8-8131-fddc8777ee9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rust\features">
+      <UniqueIdentifier>{f100e081-c6dc-46c6-8a32-21c98e8bfd63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\chaiscript">
+      <UniqueIdentifier>{9339ad9c-5e29-41b8-9dc3-f1c1e275c1b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\chaiscript\wrappers">
+      <UniqueIdentifier>{1e10e3e1-516b-4ae4-95df-1f6eada48c07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\chaiscript\include">
+      <UniqueIdentifier>{2afac79d-5a92-45fc-820f-61380ab47eb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\chaiscript\include\dispatchkit">
+      <UniqueIdentifier>{a0c942ea-e503-4dc4-826e-f4dd8728360d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\chaiscript\include\language">
+      <UniqueIdentifier>{774c5b96-a191-493f-9d18-35b6bf13458d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\chaiscript\include\utility">
+      <UniqueIdentifier>{bb8a6f43-23f9-4e91-b46f-c02ab15f672a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\chaiscript\system">
+      <UniqueIdentifier>{c7f146ea-cedf-4893-a6f4-b9a837691188}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Hooks\Impl\DDraw.OnGUI.cpp">
+      <Filter>impl\hooks\fn</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks\Impl\ClientInput.cpp">
+      <Filter>impl\hooks\fn</Filter>
+    </ClCompile>
+    <ClCompile Include="Rust\Features\Visuals\Visuals.cpp">
+      <Filter>rust\features</Filter>
+    </ClCompile>
+    <ClCompile Include="DllMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Hooks\Hooks.hpp">
+      <Filter>impl\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Rust\Features\Visuals\Visuals.hpp">
+      <Filter>rust\features</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Il2cpp\Hook\Hook.hpp">
+      <Filter>impl\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Math\Matrix\Matrix.hpp">
+      <Filter>math\matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Classes\BasePlayer.hpp">
+      <Filter>rust\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Classes\BaseWeapon.hpp">
+      <Filter>rust\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Classes\Transform.hpp">
+      <Filter>rust\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Unity\Unity_Sdk.hpp">
+      <Filter>shared\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Enums\Enums.hpp">
+      <Filter>rust\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK.hpp">
+      <Filter>rust</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Il2cpp\Importer.hpp">
+      <Filter>shared\utl</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Math\Vector\Vector.hpp">
+      <Filter>math\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Il2cpp\Managed.hpp">
+      <Filter>shared\utl</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Unity\Rendering\Unity_Gl.hpp">
+      <Filter>shared\unity\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Unity\Rendering\Unity_Gui.hpp">
+      <Filter>shared\unity\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Il2cpp\Il2cpp_Lib.hpp">
+      <Filter>shared\utl</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Unity\Rendering\Color\Color.hpp">
+      <Filter>shared\unity\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Xorstr\Xorstr.hpp" />
+  </ItemGroup>
+</Project>

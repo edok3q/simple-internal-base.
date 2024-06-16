@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{5DF79000-E8F4-400A-B4EB-55C66CFDF3BA}</ProjectGuid>
+    <RootNamespace>sapphire</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <ProjectName>Rust_Cheat</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\Build</OutDir>
+    <IntDir>..\Bin</IntDir>
+    <TargetName>!Simple_Base</TargetName>
+    <IncludePath>C:\Users\edoke\OneDrive\Рабочий стол\Новая папка\Main\SDK;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DllMain.cpp" />
+    <ClCompile Include="Hooks\Impl\ClientInput.cpp" />
+    <ClCompile Include="Hooks\Impl\DDraw.OnGUI.cpp" />
+    <ClCompile Include="Rust\Features\Visuals\Visuals.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SDK\Unity\Rendering\Color\Color.hpp" />
+    <ClInclude Include="SDK\Classes\BasePlayer.hpp" />
+    <ClInclude Include="SDK\Classes\BaseWeapon.hpp" />
+    <ClInclude Include="SDK\Classes\Transform.hpp" />
+    <ClInclude Include="SDK\Enums\Enums.hpp" />
+    <ClInclude Include="Hooks\Hooks.hpp" />
+    <ClInclude Include="Utils\Il2cpp\Il2cpp_Lib.hpp" />
+    <ClInclude Include="SDK\SDK.hpp" />
+    <ClInclude Include="Utils\Math\Matrix\Matrix.hpp" />
+    <ClInclude Include="Utils\Il2cpp\Hook\Hook.hpp" />
+    <ClInclude Include="Utils\Il2cpp\Importer.hpp" />
+    <ClInclude Include="Utils\Il2cpp\Managed.hpp" />
+    <ClInclude Include="SDK\Unity\Rendering\Unity_Gl.hpp" />
+    <ClInclude Include="SDK\Unity\Rendering\Unity_Gui.hpp" />
+    <ClInclude Include="SDK\Unity\Unity_Sdk.hpp" />
+    <ClInclude Include="Utils\Math\Vector\Vector.hpp" />
+    <ClInclude Include="Rust\Features\Visuals\Visuals.hpp" />
+    <ClInclude Include="Utils\Xorstr\Xorstr.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
